@@ -1,0 +1,76 @@
+* {
+  transition: all 0.2s ease-in-out;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url("/9860458.jpg");
+  background-size: contain;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #fff;
+}
+
+.card {
+  background: #4C37B8;
+  border-radius: 4px;
+  height: 85vh;
+  width: 80vw;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  /* Adjusted box shadow for depth */
+  text-align: center;
+  color: white;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.text p {
+  text-align: center;
+}
+
+
+@media only screen and (min-width: 1000px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .card img.birthday {
+    width: 100%;
+    max-width: 50vw;
+  }
+}
+
+@media only screen and (max-height: 640px) {
+
+  .card img.birthday {
+    width: 100%;
+  }
+}
+
+img.birthday {
+  width: 100%;
+}
+
+.text {
+  padding: 1em;
+  color: white;
+  /* Adjusted text color */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+body.myAudio {
+  animation: fadeIn 2s ease-in-out;
+  /* Adjust the animation duration and timing function as needed */
+}
